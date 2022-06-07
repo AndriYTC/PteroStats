@@ -57,7 +57,7 @@ module.exports = async function postStatus(client, panel, nodes) {
                 }
 
                 if (client.config.resource.location) description = description + 'Location: ' + data.location + '\n'
-                if (client.config.resource.allocations) description = description + 'Servers : ' + data.allocations.toLocaleString() + '\n'
+                if (client.config.resource.allocations) description = description + 'Allocation : ' + data.allocations.toLocaleString() + '\n'
                 if (client.config.resource.servers) description = description + 'Servers : ' + data.total_servers.toLocaleString() + '\n'
 
                 description = description + '```'
